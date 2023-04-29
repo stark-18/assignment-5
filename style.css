@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    height: 100px;
+    /* background: grey; */
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    cursor:pointer;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #3a3a3a;
+    display: inline-block;
+}
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background:#39397d;
+    transition:all 0.5s;
+}
+li a:hover::after{
+    width: 100%;
+
+}
+main{
+    display: flex;
+    border: 1px solid rgb(45, 43, 43);
+    height: calc(100vh - 100px);
+    padding: 20px;
+    /* color: aliceblue; */
+    /* text-emphasis-color: blue; */
+    align-items: center;
+    /* justify-content: center; */
+    background-image: url("https://r4.wallpaperflare.com/wallpaper/875/252/867/low-poly-wireframe-digital-art-wallpaper-0960982df1aa8d6b96d7081f1021763d.jpg");
+    background-size: contain;
+
+}
+.hero-img{
+    max-width: 670px;
+    height: auto;
+
+}
+.content-left{
+    width: 30%;
+
+}
+main h1{
+    margin: 20px;
+    font-size: 54px;
+    color: #469b99;
+    text-transform: uppercase;
+
+}
+main h2{ 
+    margin: 10px;
+    font-size: 25px;
+    color: #fca70c;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+main p{
+    font-size: 14px;
+    font-weight: 300;
+    color: whitesmoke;
+    line-height: 31.5px;
+    margin: 30px 0;
+    
+}
+.cta{
+    padding: 15px 30px;
+    background: #174030;
+    color: #fff;
+    outline: none;
+    border: none ;
+    font-weight: 400;
+    text-transform:uppercase ;
+    border-radius: 50px ;
+    cursor:pointer;
+} 
+.Signup-btn{
+    padding: 15px 30px;
+    background: #29295a;
+    color: #fff;
+    outline: none;
+    border: none ;
+    font-weight: 400;
+    text-transform:uppercase ;
+    border-radius: 50px ;
+    cursor:pointer; 
+}
+/* .logo
+{
+    border-radius: 5px;
+    width: 100px;
+} */
+.txt{
+    text-align: center;
+    background-color: #174030;
+    color: aliceblue;
+}
+button:hover {
+    background-color: #3e8e41;
+}
